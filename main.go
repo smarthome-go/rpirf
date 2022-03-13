@@ -4,7 +4,7 @@ Protocol and logic ported from https://github.com/milaq/rpi-rf
 
 Example
 func main() {
-	device := Init(17, 1, 10, 180, 24)
+	device := rpirf.NewRF(17, 1, 10, 180, 24)
 	device.Send(5121438)
 	device.Cleanup()
 }
