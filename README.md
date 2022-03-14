@@ -40,7 +40,7 @@ import "github.com/MikMuellerDev/rpirf"
 Before codes can be sent, the physical device must be set up and some basic parameters, for example *pulselength* or *protocol* must be set.
 
 ```go
-	device := rpirf.NewRF(17, 1, 10, 180, 24)
+device := rpirf.NewRF(17, 1, 10, 180, 24)
 ```
 
 The following parameters describe
