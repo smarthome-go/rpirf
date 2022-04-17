@@ -46,7 +46,7 @@ device := rpirf.NewRF(17, 1, 10, 180, 24)
 The following parameters describe
 - the `BCM` pin number
 - protocol to use
-- How ofter each code should be sent (as redundancy)
+- How often each code should be sent (as redundancy)
 - The pulselength
 - The content length
 
