@@ -4,12 +4,14 @@
 Protocol and logic ported from https://github.com/milaq/rpi-rf
 # Supported Hardware
 ## Sender
-Most generic 433/315MHz capable modules connected via GPIO to a Raspberry Pi
+Most generic 433/315MHz capable modules connected via GPIO to a Raspberry Pi will work with this library.
+The picture below displays a unit which has been tested.
 
 ![433mhz sender](./hardware.webp)
 
 ## Outlets / Sockets
 Most generic 433mhz remote controlled outlets do work.
+The picture below displays a outlet which works with the sender and library.
 
 ![generic socket](./socket.webp)
 
@@ -21,7 +23,7 @@ As of now (*March 14 2022*), the library does not support receiving (*sniffing*)
 
 However, I can strongly recommend a Python library by [milaq/rpi-rf](https://github.com/milaq/rpi-rf), which supports sending as well as receiving data.
 
-The golang *rpirf* library focusses on production usecases where performance is critical.
+However, the go *rpirf* library is only supposed to support sending.
 
 # Installation / Setup
 
