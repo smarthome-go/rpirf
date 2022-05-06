@@ -29,12 +29,12 @@ However, the go *rpirf* library is only supposed to support sending.
 
 To install the library in your current go project, *go get* it using following command:
 ```
-go get github.com/MikMuellerDev/rpirf
+go get github.com/smarthome-go/rpirf
 ```
 You can then import the library in your project using following code
 
 ```go
-import "github.com/MikMuellerDev/rpirf"
+import "github.com/smarthome-go/rpirf"
 ```
 
 # Getting started
@@ -71,7 +71,7 @@ For a complete reference, take a look at the [Example](#example)
 package main
 
 import (
-	"github.com/MikMuellerDev/rpirf"
+	"github.com/smarthome-go/rpirf"
 )
 
 func main() {

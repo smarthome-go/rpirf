@@ -1,4 +1,4 @@
-module github.com/MikMuellerDev/rpirf
+module github.com/smarthome-go/rpirf
 
 go 1.17
 
