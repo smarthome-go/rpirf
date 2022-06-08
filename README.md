@@ -21,7 +21,7 @@ The library has been tested on following outlets using a *Raspberry Pi 3b* and a
 ## Limitations
 As of now (*March 14 2022*), the library does not support receiving (*sniffing*) signals in order to send them later.
 
-However, I can strongly recommend a Python library by [milaq/rpi-rf](https://github.com/milaq/rpi-rf), which supports sending as well as receiving data.
+However, a Python library by [milaq/rpi-rf](https://github.com/milaq/rpi-rf) is recommended, which supports sending as well as receiving data.
 
 However, the go *rpirf* library is only supposed to support sending.
 
@@ -39,7 +39,7 @@ import "github.com/smarthome-go/rpirf"
 
 ## Getting started
 ### Creating a *new instance*
-Before codes can be sent, the physical device must be set up and some basic parameters, for example *pulselength* or *protocol* must be set.
+Before data can be sent, the physical device must be set up, and some basic parameters, for example *pulselength* or *protocol* must be set.
 
 ```go
 device := rpirf.NewRF(17, 1, 10, 180, 24)
@@ -47,8 +47,8 @@ device := rpirf.NewRF(17, 1, 10, 180, 24)
 
 The following parameters describe
 - the `BCM` pin number
-- protocol to use
-- How often each code should be sent (as redundancy)
+- Protocol to use
+- How often each code should be sent (for redundancy)
 - The pulselength
 - The content length
 
@@ -59,7 +59,8 @@ The `Send` method encodes the provided code to binary and sends it using the pre
 device.Send(5121438)
 ```
 ### Cleaning up
-After all codes have been sent, it is recommended to clean the device
+After all data has been sent, it is recommended to clean the device.
+However, in a typical setup, this function is either `defered` or called on program exit.
 ```go
 device.Cleanup()
 ```
