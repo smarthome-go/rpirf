@@ -1,5 +1,5 @@
 # rpirf
- A library to send `433mhz` signals from a Raspberry Pi
+ A library for sending `433mhz` signals via a Raspberry Pi.
 
 Protocol and logic ported from https://github.com/milaq/rpi-rf
 # Supported Hardware
