@@ -15,7 +15,7 @@ The picture below displays a outlet which works with the sender and library.
 
 ![generic socket](./socket.webp)
 
-The library has been tested on following outlets from a *Raspberry Pi 3b* and a *Raspberry Pi 2b*, both running *Raspbian Lite*.
+The library has been tested on following outlets using a *Raspberry Pi 3b* and a *Raspberry Pi 2b*, both running *Raspbian Lite*.
 
 
 ## Limitations
