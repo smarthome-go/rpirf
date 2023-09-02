@@ -2,8 +2,6 @@ package rpirf
 
 import (
 	"errors"
-
-	"github.com/stianeikeland/go-rpio/v4"
 )
 
 type Protocol struct {
@@ -17,7 +15,7 @@ type Protocol struct {
 }
 
 type RFDevice struct {
-	Pin           rpio.Pin
+	Output        HardwareOutput
 	TxEnabled     bool
 	TxProto       uint8
 	TxRepeat      uint8
